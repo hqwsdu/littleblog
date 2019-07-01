@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <com.example.zt.feeling.tools.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/headimages"
+
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/my_color"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="来年我为你摇桃花"
+        android:id="@+id/textView3"
+        android:textColor="@color/my_color"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="《越狱》落榜难以置信 史上最佳英美剧TOP20 _ 游民星空 GamerSky.com
+英美剧越来越受到国人的喜爱，主要是不乏一些精彩之作来吸引观众。而英美剧这种剧情紧凑之作精良堪比电影的拍摄方式也是受欢迎的... 查看全文《越狱》落榜难以置信 史上最佳英美剧TOP20 _ 游民星空 GamerSky.com
+英美剧越来越受到国人的喜爱，主要是不乏一些精彩之作来吸引观众。而英美剧这种剧情紧凑之作精良堪比电影的拍摄方式也是受欢迎的... 查看全文"
+        android:id="@+id/textView4"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/blogitem1_imageView"
+        android:src="@drawable/text02"
+        android:scaleType="fitStart"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+
+</RelativeLayout>

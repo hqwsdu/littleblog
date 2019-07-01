@@ -1,0 +1,16 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zt.feeling.Fragment.BlogFragment"
+    android:id="@+id/blogfrg_swipRefresh">
+
+    <ListView
+        android:id="@+id/frg_blog_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

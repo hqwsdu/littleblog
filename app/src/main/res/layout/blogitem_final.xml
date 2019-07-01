@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/headimage"
+
+
+        android:id="@+id/blogitem_headImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="来年我为你摇桃花"
+        android:id="@+id/blogitem_nickname"
+        android:textColor="@color/my_color"
+        android:layout_alignBottom="@+id/blogitem_headImageView"
+        android:layout_toRightOf="@+id/blogitem_headImageView"
+        android:layout_toEndOf="@+id/blogitem_headImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/blogitem_content"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/blogitem_nickname"
+        android:layout_alignStart="@+id/blogitem_nickname"
+        android:layout_below="@+id/blogitem_nickname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="审核通过"
+        android:background="@drawable/headimages"
+        android:padding="5dp"
+
+        android:id="@+id/blogitem_state"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/blogitem_nickname"
+        android:layout_alignRight="@+id/blogitem_nickname"
+        android:layout_alignParentRight="true"
+        android:layout_alignEnd="@+id/blogitem_nickname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2016.6.7"
+        android:textColor="@color/my_color"
+        android:id="@+id/blogitem_date"
+        android:layout_toEndOf="@+id/blogitem_headImageView"
+        android:layout_alignLeft="@+id/blogitem_nickname"
+        android:layout_alignStart="@+id/blogitem_nickname"
+        android:layout_toRightOf="@+id/blogitem_headImageView"
+        android:layout_below="@+id/blogitem_gridview" />
+
+    <com.example.zt.feeling.tools.NoScrollGridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blogitem_gridview"
+        android:numColumns="3"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@+id/blogitem_content"
+        android:layout_alignLeft="@+id/blogitem_content"
+        android:layout_alignStart="@+id/blogitem_content" />
+
+
+</RelativeLayout>

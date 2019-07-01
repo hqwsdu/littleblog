@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_color"
+    android:gravity="center">
+    <Button
+        android:id="@+id/listFoot"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="点击查看更多"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@null"/>
+
+</RelativeLayout>

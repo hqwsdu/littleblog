@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.zt.feeling.Activity.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/my_color"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/back"
+            android:layout_weight="1"
+            android:background="@null"
+            android:id="@+id/register_back"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="非零用户注册"
+            android:layout_weight="7"
+            android:textSize="15sp"/>
+        <TextView
+            android:gravity="fill_vertical|center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+           style="@style/zhuce_Edit"
+            android:inputType="phone"
+            android:hint="输入您收到验证码"
+            android:id="@+id/register_code"
+            android:background="@drawable/zhuce1"
+            android:drawableLeft="@drawable/user"
+            android:layout_below="@+id/register_phone"
+            android:layout_alignLeft="@+id/register_phone"
+            android:layout_alignStart="@+id/register_phone"
+            android:layout_alignRight="@+id/register_v"
+            android:layout_alignEnd="@+id/register_v" />
+
+        <EditText
+            style="@style/zhuce_Edit"
+            android:inputType="phone"
+            android:hint="请输入手机号"
+            android:background="@drawable/zhuce"
+            android:id="@+id/register_phone"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/user"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击获得验证码"
+            android:id="@+id/register_v"
+            android:padding="5dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/zhuce_v"
+            android:layout_below="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_alignBottom="@+id/register_phone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="registerOnClick"/>
+
+
+
+    <Button
+        android:onClick="registerOnClick"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:id="@+id/register_next"
+        android:textSize="20sp"
+        android:background="@drawable/zhuce_ensure"
+        android:layout_below="@+id/register_code"
+        android:layout_alignLeft="@+id/register_code"
+        android:layout_alignStart="@+id/register_code"
+        android:layout_alignRight="@+id/register_code"
+        android:layout_alignEnd="@+id/register_code" />
+
+</RelativeLayout>
